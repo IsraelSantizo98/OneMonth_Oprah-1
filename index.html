@@ -23,6 +23,7 @@
         */
         //Single comment, just one line, only in JS
         var username = prompt("Hello, who are you?");
+        var car = new Array("Toyota", "Maserati", "Mercedez");
         /*This is an event*/
         //alert("Soy molesto");
         //This printing into the screen, in this we can put style from CSS and HTML
@@ -30,12 +31,19 @@
         //The conditional are very important in all language of programming, basically its function when if something happen do something or else happen
         if (username==="Israel"){
             //This is to show a variable into de DOM
-            document.write("<h1>Hello "+ username + " you won a car!</h1>");
+            document.write("<h1>Hello "+ username + " you won a car! </h1>");
+            document.write("<h1>Would you like a "+ car[Math.floor(Math.random()*3)] + "?</h1>");
         }else{
             document.write("<h1>Hello "+ username + "!</h1>");
         }
+        //For view the code in the browers use console.log(username);
     </script>
 </head>
 <body>
+    <main>
+        <div class="image-container">
+            <img src="image/universe(8).jpg" alt="Oprah">
+        </div>
+    </main>
 </body>
 </html>
