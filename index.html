@@ -24,17 +24,23 @@
         //Single comment, just one line, only in JS
         var username = prompt("Hello, who are you?");
         var car = new Array("Toyota", "Maserati", "Mercedez");
+        var carPictures = new Array("image/universe(1).jpg","image/universe(2).jpg","image/universe(3).jpg");
+        var randomCar = Math.floor(Math.random()*car.length);
         /*This is an event*/
         //alert("Soy molesto");
         //This printing into the screen, in this we can put style from CSS and HTML
         //document.write("<h2 style='text-align: center; color: lightcoral'>Hello!!</h2>");
         //The conditional are very important in all language of programming, basically its function when if something happen do something or else happen
-        if (username==="Israel"){
+        if (username==="Israel" || username === "Chris"){
             //This is to show a variable into de DOM
             document.write("<h1>Hello "+ username + " you won a car! </h1>");
             document.write("<h1>Would you like a "+ car[Math.floor(Math.random()*3)] + "?</h1>");
+            //var carPictures = document.getElementById("image");
+            //carPictures.scr = "image/universe(1).jpg";
+            document.write("<img src=\"" + carPictures[randomCar] +"\">");
         }else{
-            document.write("<h1>Hello "+ username + "!</h1>");
+            document.write("<h1>Hello "+ username + "! </h1>");
+            document.write("<img src=\"" + "image/universe(8).jpg" + "\">");
         }
         //For view the code in the browers use console.log(username);
     </script>
@@ -42,7 +48,7 @@
 <body>
     <main>
         <div class="image-container">
-            <img src="image/universe(8).jpg" alt="Oprah">
+            
         </div>
     </main>
 </body>
